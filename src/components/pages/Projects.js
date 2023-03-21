@@ -32,29 +32,15 @@ export default function Projects() {
             />
             <CardItem
               src="images/weather.jpg"
-              text="Experience Football on Top of the Himilayan Mountains"
-              label="Adventure"
-              path="/projects"
+              text="Check the weather before you go"
+              label="Weather"
+              path="/weather"
             />
             <CardItem
-              src="images/weather.jpg"
-              text="Ride through the Sahara Desert on a guided camel tour"
-              label="Adrenaline"
-              path="/projects"
-            />
-          </ul>
-          <ul className="cards__items">
-            <CardItem
-              src="images/math.jpg"
-              text="Check it my login and registration form here"
-              label="Login and registration"
-              path="/calculator"
-            />
-            <CardItem
-              src="images/amoba.jpg"
-              text="Try out my Tic-Tac-Toe game with your friends!"
-              label="Tic-Tac-Toe"
-              path="/tictactoe"
+              src="images/planet.png"
+              text="Imagine you have this landing page"
+              label="Landing page"
+              path="/comingsoon"
             />
           </ul>
         </div>
