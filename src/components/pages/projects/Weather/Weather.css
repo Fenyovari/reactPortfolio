@@ -1,0 +1,10 @@
+.weather-body {
+  background: url("/public/images/weather.jpg");
+  height: calc(100vh - 80px);
+}
+
+.weather-container {
+  max-width: 1080px;
+  margin: auto;
+  padding: 20px;
+}
