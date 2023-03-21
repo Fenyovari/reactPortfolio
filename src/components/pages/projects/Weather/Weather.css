@@ -1,5 +1,6 @@
 .weather-body {
   background: url("/public/images/weather.jpg");
+  background-size: cover;
   height: calc(100vh - 80px);
 }
 
