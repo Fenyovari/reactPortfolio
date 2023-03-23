@@ -39,7 +39,7 @@ export default function Projects() {
             <CardItem
               src="images/planet.png"
               text="Imagine you have this landing page"
-              label="Landing page"
+              label="Coming soon"
               path="/comingsoon"
             />
           </ul>
