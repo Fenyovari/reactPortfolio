@@ -16,23 +16,22 @@ import ComingSoon from "./ComingSoon";
 function App() {
   return (
     <>
-    <div className="app-container">
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/sign-up" element={<AboutMe />} />
-          <Route path="/calculator" element={<Calculator />} />
-          <Route path="/tictactoe" element={<TicTacToe />} />
-          <Route path="/todo" element={<ToDo />} />
-          <Route path="/weather" element={<Weather />} />
-          <Route path="/comingsoon" element={<ComingSoon />} />
-        </Routes>
-      </Router>
-
-    </div>
+      <div className="app-container">
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/Projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/calculator" element={<Calculator />} />
+            <Route path="/tictactoe" element={<TicTacToe />} />
+            <Route path="/todo" element={<ToDo />} />
+            <Route path="/weather" element={<Weather />} />
+            <Route path="/comingsoon" element={<ComingSoon />} />
+          </Routes>
+        </Router>
+      </div>
     </>
   );
 }
