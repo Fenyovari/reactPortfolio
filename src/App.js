@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import "./App.css";
 import "./components/HeroSection.css";
 import Home from "./components/pages/Home";
@@ -16,7 +16,7 @@ import ComingSoon from "./ComingSoon";
 function App() {
   return (
     <>
-      <div className="app-container">
+      <div className="app-container" data-sal="slide-up" data-sal-delay="500">
         <Router>
           <Navbar />
           <Routes>
