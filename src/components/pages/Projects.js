@@ -47,7 +47,7 @@ export default function Projects() {
               label="Coming soon"
               path="/comingsoon"
             />
-          </ul>motion.
+          </ul>
         </div>
       </div>
     </motion.div>
