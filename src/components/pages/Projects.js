@@ -2,10 +2,15 @@ import React from "react";
 import "../../App.css";
 import CardItem from "../CardItem";
 import "../Cards.css";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   return (
-    <>
+    <motion.div 
+    initial={{width: 0}} 
+    animate={{width: "100%"}} 
+    exit={{x: window.innerWidth, transition: { duration: 0.3 } }}
+    >
       <h1 className="projects">PROJECTS</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
@@ -42,9 +47,9 @@ export default function Projects() {
               label="Coming soon"
               path="/comingsoon"
             />
-          </ul>
+          </ul>motion.
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }

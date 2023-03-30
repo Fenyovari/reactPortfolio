@@ -6,12 +6,6 @@ import "./HeroSection.css";
 function HeroSection() {
   return (
     <div className="hero-container">
-      <video autoPlay loop muted>
-        <source
-          src={`${process.env.PUBLIC_URL}/videos/video-2.mp4`}
-          type="video/mp4"
-        />
-      </video>
       <h1>WELCOME TO MY PAGE</h1>
       <p>Let's the journey begin!</p>
       <div className="hero-btns">

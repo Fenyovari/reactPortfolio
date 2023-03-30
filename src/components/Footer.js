@@ -1,27 +1,35 @@
-import React from "react";
+import React, { useEffect} from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import "./Footer.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 function Footer() {
+
+  useEffect(() =>{
+    Aos.init({duration: 1500})
+  },[])
+
+
   return (
     <div className="footer-container">
       <section className="footer-subscription">
-        <p className="footer-subscription-heading">
+        <p className="footer-subscription-heading" data-aos="zoom-in">
           Join the Adventure and let's discover new heights together!
         </p>
         
       </section>
       <div className="footer-links">
-        <div className="footer-link-wrapper">
+        <div className="footer-link-wrapper" data-aos="zoom-in">
           <div class="footer-link-items">
             <h2>Contact Me</h2>
-            <Link to="/"><i class="fa-solid fa-phone"></i> : +36 70/347-8222</Link>
+            <Link to="/"><i class="fa-solid fa-phone" ></i> : +36 70/347-8222</Link>
             <Link to="/"><i class="fa-solid fa-envelope"></i> : fenydani@gmail.com</Link>
           </div>
         </div>
-        <div className="footer-link-wrapper">
+        <div className="footer-link-wrapper" data-aos="zoom-in">
           <div class="footer-link-items">
             <h2>Social Media</h2>
             <Link to="/">Instagram</Link>
@@ -31,7 +39,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <section class="social-media">
+      <section class="social-media" data-aos="zoom-in">
         <div class="social-media-wrap">
           <div class="footer-logo">
             <Link to="/" class="social-logo">

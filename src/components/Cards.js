@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CardItem from "./CardItem";
 import "./Cards.css";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 function Cards() {
+
+    useEffect(() =>{
+      Aos.init({duration: 1500})
+    },[])
+
   return (
     <div className="cards">
-      <h1>Check out my projects!</h1>
+      <h1 data-aos="zoom-in">Check out my projects!</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
-          <ul className="cards__items">
+          <ul className="cards__items" data-aos="zoom-in">
             <CardItem
               src="images/math.jpg"
               text="Try out my simple calculator app"
               label="Calculator"
               path="/calculator"
+
             />
             <CardItem
               src="images/amoba.jpg"
@@ -22,7 +30,7 @@ function Cards() {
               path="/tictactoe"
             />
           </ul>
-          <ul className="cards__items">
+          <ul className="cards__items" data-aos="zoom-in">
             <CardItem
               src="images/todolist.jpg"
               text="Let's write some of your to-dos here"
@@ -44,7 +52,7 @@ function Cards() {
           </ul>
         </div>
       </div>
-      <h1>
+      <h1 data-aos="zoom-in">
         Let's check out my other projects!{" "}
         <a href="/projects">
           <i className="fa fa-arrow-right"></i>
